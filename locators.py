@@ -33,13 +33,18 @@ class ProductPageLocators:
     ADD_TO_CART_BUTTON = (By.CSS_SELECTOR, '#button-cart')
 
 
-class AdminPageLocators:
+class LoginAdminPageLocators:
     USERNAME = (By.CSS_SELECTOR, '#input-username')
     PASSWORD = (By.CSS_SELECTOR, '#input-password')
     LOGIN_BUTTON = (By.CSS_SELECTOR, '[type=submit]')
     FORGOT_PASSWORD = (By.XPATH, '//a[contains(@href, "forgotten")]')
     FORM_TITLE = (By.CSS_SELECTOR, '.panel-title')
 
+
+class AdminPageLocators:
+    LOGOUT_BUTTON = (By.XPATH, '//a[contains(@href, "logout")]')
+    CATALOG = (By.CSS_SELECTOR, '#menu-catalog')
+    CATALOG_PRODUCTS = (By.XPATH, '//a[contains(@href, "route=catalog/product")]')
 
 
 
